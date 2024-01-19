@@ -1,0 +1,134 @@
+* {
+    /*1.	Minden elem box-sizing méretét állítsd be border-box-ra!*/
+    box-sizing: border-box; 
+  }
+
+ body{
+    background-image: url('kepek/hatter.jpg');
+ }
+
+  main{
+    /*4.	A main elem szélességét állítsd 80%-ra.*/
+    width: 80%;
+     /*5.	A main elem ne lehessen nagyobb, mint 1000px.*/
+    max-width: 1000px;
+    margin: auto;/*6.	Állítsd a teljes tartalmat a böngésző közepére!*/
+    background-color: rgb(255, 255, 230);/*7.	A main elem háttérszíne legyen RGB kóddal megadva: RGB(255,255,230)!*/
+  }
+
+  aside img{
+    /*2.	Az aside elem képeinek szélességét állítsd be 100%-ra!*/
+    width: 100%;
+  }
+
+  header{
+    /*8.	A header átlátszóságát állítsd 0.8-ra.*/
+    opacity: 0.8;
+    /*9.	A header elembe állíts be a fejlec.jpg állományt  háttérképként!*/
+    background-image: url('kepek/fejlec.jpg');
+    /*10.	A header magassága legyen 550px;*/
+    height: 550px;
+    /*11.	A fejlécben lévő szöveg színe legyen piros!*/
+    color: red;
+    /*12.	A fejlécben lévő szöveg színe legyen vastag betűs!*/
+    font-weight: bold;
+    /*13.	A fejlécben lévő szöveg betű típusa legyen cursive.*/
+    font-family: cursive;
+    /*14.	 A fejlécben lévő szövegre állíts be 60px felső belső margót. */
+    margin-top: 60px;
+    /*15.	A fejlécben lévő szöveget igazítsd középre!*/
+    text-align: center;
+  }
+
+  nav{
+
+    /*16.	A navigáció háttérszíne legyen piros.*/
+    background-color: red;
+    /*17.	A navigáció magassága legyen 50px;*/
+    height: 50px;
+    /*18.	Igazítsd el a navigációt a mintának megfelelően gridekkel (2 sor)*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1frs;
+  }
+
+  nav ul{
+    display: inline; /*Igy a felsorolás egy sorban lesz*/
+  }
+
+  nav li{
+    display: inline; /*Igy a felsorolás egy sorban lesz*/
+    /*19.	Állíts be a navigáció li elemére 1 potnos fehér színű felső szegélyt!*/
+    border-top: 1px solid white;
+    /*20.	Állíts be a navigáció li elemére 1 potnos fehér színű alsó szegélyt!*/
+    border-bottom: 1px solid white;
+    /*21.	A navigáció li elemére állíts be 5px belső margót!*/
+    padding: 5px;
+    /*22.	A navigáció li elemei előtt ne legyen felsorolásjel!*/
+   list-style-type: none; 
+}
+
+nav li:hover{
+    /*23.	Ha a navigáció li eleme fölé viszem az egeret, a háttérszín változzon zöldre!*/
+    background-color: green;
+    
+}
+
+nav a{
+    /*24.	A navigáció linkjeiről szedd le az aláhúzást!*/
+    text-decoration: none;
+    /*25.	A navigáció linkjeinek betűszíne legyen  fehér.*/
+    color: white;
+    /*26.	A navigáció linkjei legyenek vastag betűsek. */
+    font-weight: bold;
+}
+
+article{
+    /*27.	Az article elemen belül a bekezdések legyenek sorkizárt igazításúak. */
+    text-align: justify;
+    /*28.	Az article elemben a bekezdések betű mérete legyen 10px!*/
+    font-size: 10px;
+}
+
+article h1{
+    /*29.	Az article elemben a cím betű mérete legyen 15px!*/
+    font-size: 15px;
+    /*30.	Az article elemben a cím színe legyen #ff1a1a!*/
+    color: #ff1a1a;
+    /*31.	Az article elemben a cím betűtípusa legyen "Trebuchet MS", Helvetica, sans-serif;*/
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+
+}
+
+article img{
+    /*32.	Az article elemen belül a kép ússzon el a szöveg mellé jobbra. */
+    float: right;
+    /*33.	Az article elemen belül a kép sarka legyen lekerekített.*/
+    border-radius: 10px;
+    /*34.	Az article elemen belül a képnek legyen árnyéka. */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.baloldal{
+    float: left; /*Aside bal oldalra rendezése*/
+    
+    margin-right: 10px;
+}
+
+.bal-oldal img {
+    
+    width: 100%; /* A képek szélessége 100%-ra van állítva az aside-ban */
+    display: block; /* Törölje a képek közötti felesleges helyet */
+}
+
+aside img{
+    border: 1px solid red;
+    padding: 5px;
+    max-width: 200px;
+}
+
+.sortorles{
+    clear: both;
+    float: left;
+}
